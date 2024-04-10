@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Entrega final APIs</title>
+</head>
+<body>
+<div>
+    <div class="contenedorcabecera">  
+        <h1>Conversor de Monedas Nacional</h1>
+    </div>
+    <div class="contenedor">
+        <h2>Pesos CLP</h2>
+        <div class="monto_ingresado">
+            <input type="number" id="cantidad" placeholder="0" value="1" />
+        </div>
+        <div class="cantidades">
+            <select id="selector_moneda_cambio">
+                <option value="1" selected>Moneda a Convertir</option>
+                <option value="uf">uf</option>
+                <option value="dolar">dolar</option>
+                <option value="euro">euro</option>
+            </select>
+        </div>
+        <div class="contenedor_buscar">
+            <button class="boton" id="boton">Buscar</button>
+            
+        </div>
+        <div class="monto_final" id="monto_final"></div>
+    </div>
+
+</div>
+
+<!-- No alcance a hacer el gráfico -->
+<section>
+    <div class="grafico">
+        <canvas id="myChart" width="800" height="400"></canvas>
+    </div>
+</section>
+<script src="./assets/scripts/script.js"></script>
+</body>
+</html>
